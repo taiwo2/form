@@ -1,8 +1,9 @@
 {
-  "name": "redux-form-field-arrays-example-forked",
+  "name": "redux-form-field-dish",
   "description": "Field Arrays Example using Redux Form",
   "version": "0.0.0",
   "dependencies": {
+    "axios": "^0.24.0",
     "react": "15.6.1",
     "react-dom": "15.6.1",
     "react-redux": "5.0.6",

@@ -1,6 +1,13 @@
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-
 export default (async function showResults(values) {
-  await sleep(500); // simulate server latency
-  window.alert(`You submitted:\n\n${JSON.stringify(values, null, 2)}`);
+  fetch('https://frosty-wood-6558.getsandbox.com:443/dishes', {
+   method: 'POST',
+   headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+   },
+   body: JSON.stringify({
+      firstParam: values,
+      secondParam: null,
+   })
+})
 });
